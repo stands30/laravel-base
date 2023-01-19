@@ -53,3 +53,7 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('pages.menu.user-profile');
 	})->name('user-profile');
 });
+
+Route::get('welcome', function () {
+		return view('pages.welcome');
+	})->name('user-profile');
